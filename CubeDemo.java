@@ -4,11 +4,11 @@ class CubeDemo {
 	public static void main(String[] args) {
 		double size = 0.1;
 		double a0 = 90;
-		Turtle t = new Turtle(0.3,0.3,a0);
+		Turtle t = new Turtle(0.3,0.3,a0); //set t as turtle
 		drawCube(t, size);
 		System.out.println("Draw another to the:\n8: top\n2: bottom\n4: left\n6: right");
 		Scanner input = new Scanner(System.in);
-		while(true) {
+		while(true) { //loop to move turtle according to user input
 			int cmd = input.nextInt();
 			switch(cmd) {
 				case 8: drawCubeDirection(t, size, a0, "up");
@@ -26,7 +26,7 @@ class CubeDemo {
 		}
 	}
 
-	public static void drawCube(Turtle t, double side) {
+	public static void drawCube(Turtle t, double side) { //function to draw a cube
 		double a0 = t.getAngle();
 		t.left(60);
 		t.forward(side);
@@ -44,7 +44,7 @@ class CubeDemo {
 
 	}
 
-	public static void drawCubeDirection(Turtle t, double size, double angle, String direction) {
+	public static void drawCubeDirection(Turtle t, double size, double angle, String direction) { //function to draw cube adjacent to the previous cube
 		switch(direction) {
 			case "right":
 				t.right(60);
