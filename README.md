@@ -1,3 +1,3 @@
 # java-turtle
 Implemented a Turtle in Java
-![alt text](https://raw.githubusercontent.com/Aaron-Macneill/java-turtle/master/Res/CubeDemo.gif)
+<a <img src="https://media.giphy.com/media/xULW8uqEisH6cvKYp2/giphy.gif"/></a>
